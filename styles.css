@@ -27,7 +27,15 @@ a {
   color: #39add1;
   font-weight: 700;
 }
-
+.st0{
+  transition: fill 1s ease-in;
+}
+.st0:hover{
+  fill:#111;
+}
+a{
+  transition: color 1s ease-in;
+}
 a:hover {
   color: #111;
 }
@@ -59,4 +67,14 @@ footer {
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+.sable{
+  fill:#b97f5b;
+}
+.fawn{
+  fill:#e9aa82;
+}
+.red{
+  fill:#834b29
 }

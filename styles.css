@@ -4,15 +4,23 @@ body {
   text-align: center;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
-  color: #111;
   background: #edeff0;
+  background-image: url('svgs/background.svg');
+  background-repeat: repeat;
+  background-size: 50px 50px;
 }
 
 #container {
   max-width: 960px;
   background: #fff;
   margin: 0 auto;
-  height: 100%; /* new line */
+  height: 100%;
+  /* new line */
+}
+
+.paw {
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
 }
 
 p {
@@ -27,17 +35,13 @@ a {
   color: #39add1;
   font-weight: 700;
 }
-.st0{
-  transition: fill 1s ease-in;
-}
-.st0:hover{
-  fill:#111;
-}
-a{
+
+a:hover {
   transition: color 1s ease-in;
 }
+
 a:hover {
-  color: #111;
+  color: grey;
 }
 
 header {
@@ -69,12 +73,57 @@ footer {
   color: #ba8058;
 }
 
-.sable{
-  color:#b97f5b;
+.sable {
+  color: #b97f5b;
 }
-.fawn{
-  color:#e9aa82;
+
+.fawn {
+  color: #e9aa82;
 }
-.red{
-  color:#834b29
+
+.red {
+  color: #834b29
+}
+
+.stone {
+  color: #52595e
+}
+
+/* svg */
+path.body {
+  fill: currentColor
+}
+
+.logo-text {
+  display: none;
+}
+.heart,
+.location,
+.contact {
+  fill: #39add1;
+}
+
+.heart,
+.location,
+.contact {
+  transition: fill 1s ease-in;
+}
+
+.heart:hover,
+.location:hover,
+.contact:hover {
+  fill: grey;
+}
+
+.logo:hover {
+  transition: scale(2);
+}
+
+@media screen and (min-width:425px) {
+  .logo-text {
+    display: block;
+  }
+  .sm-only {
+    display: none;
+  }
 }

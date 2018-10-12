@@ -38,16 +38,14 @@ p {
   text-align: left;
 }
 
-a {
-  text-decoration: none;
+li {
+  cursor: pointer;
   color: #39add1;
   font-weight: 700;
-}
-li:hover {
   transition: color 1s ease-in;
 }
 
-a:hover {
+li:hover {
   color: grey;
 }
 
@@ -104,21 +102,15 @@ path.body {
 .logo-text {
   display: none;
 }
-.heart,
-.location,
-.contact {
+li {
   fill: #39add1;
 }
 
-.heart,
-.location,
-.contact {
+li {
   transition: fill 1s ease-in;
 }
 
-.heart:hover,
-.location:hover,
-.contact:hover {
+li:hover{
   fill: grey;
 }
 

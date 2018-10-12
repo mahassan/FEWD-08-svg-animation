@@ -17,10 +17,18 @@ body {
   height: 100%;
   /* new line */
 }
-
+.corig-desc{
+ display: inline-block
+}
+.corig-desc h2{
+  font-weight: 200;
+  color:#b97f5b;
+}
 .paw {
   transform-origin: 50% 50%;
   transform-box: fill-box;
+  width:150px;
+  height:120px;
 }
 
 p {
@@ -35,8 +43,7 @@ a {
   color: #39add1;
   font-weight: 700;
 }
-
-a:hover {
+li:hover {
   transition: color 1s ease-in;
 }
 
